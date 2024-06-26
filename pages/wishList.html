@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cart-Shop anything, Shop evertyhing </title>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="/pages/kidsSection/kidsProduct_Css/kidsProduct01.css">
+    <link rel="stylesheet" href="/pages/home.html">
+    <link rel="stylesheet" href="/pages/about.html">
+    <link rel="stylesheet" href="/pages/categories.html">
+    <link rel="stylesheet" href="/pages/cart.html">
+
+    <title>Kids collection from clothings, sports, stationary accessories and much more</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/pages/home.html">E-Cart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/pages/moreCategories.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/kidsSection.html">Kids</a></li>
+                            <li><a class="dropdown-item" href="/pages/mensSection.html">Men</a></li>
+                            <li><a class="dropdown-item" href="/pages/womensSection.html">Women</a></li>
+                            <li>
+                                <!-- <hr class="dropdown-divider"> -->
+                            </li>
+                            <!-- <li><a class="dropdown-item" href="/pages/moreCategories.html">More</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex searchBar" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for products,fashion and more"
+                        aria-label="Search">
+                    <!-- <button class="btn btn-outline-dark" type="submit">SignUp</button> -->
+                    <a href="/pages/cart.html"> <i class="bi bi-cart"></i></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center p-md-5">
+        <div class="row ">
+            <div class="col-md-11 col-10 mx-auto ">
+                <div class="row justify-content-center">
+                    <div class=" col col-md-12 mx-auto m-lg-0 mb-5 shadow wishList_page ">
+                        <h2 class="py-4 font-weight-bold text-start">WishList
+                            <hr>
+                        </h2>
+                        <div class="cartItem" id="cartItemParentid">
+
+                            <!-- html div element in cart.js -->
+                            <!-- <div class="card p-4 border-0">
+                                <div class="row">
+                                    <div
+                                        class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                        <img src="/images/shoecollection1.webp" style="width: 250px;">
+                                    </div>
+                                    <div class="col-md-7 col-11 mx-auto px-4 mt-2 text-start">
+                                        <div class="row">
+                                            <div class="col-6 card-title">
+                                                <h5 class="card-title">LIBERTY</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Textured White Casual
+                                                    Sneaker-Shoes </h6>
+                                                <p class="card-text priceTags">₹699</p>
+                                                <p class="mb-2 fw-bold"> ₹ ${item.price} </p>
+                                                <p class="mb-2 text-success"> delivery charges: ₹
+                                                    ${item.deliveryCharges} </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="col-12 d-flex justify-content-evenly price_money">
+                                                    <a class="btn btn-info" href="removeItem.html"><i
+                                                            class="bi bi-trash"></i>Remove From Wishlist
+                                                    </a>
+                                                    <a class="btn btn-info" href="/pages/cart.html"><i
+                                                            class="bi bi-cart"></i>Add To Cart</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <a href="/pages/home.html" class="fw-bold"> Back </a> -->
+    </div>
+
+
+
+
+    <footer class="p-md-5 text-lg-start bg-gray text-muted" style="background-color: rgba(154, 153, 153, 0.285);">
+
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            E-Cart
+                        </h4>
+                        <p>
+                            “You can never be overdressed or overeducated.”
+                        </p>
+
+                        <!-- Section: Social media -->
+
+                        <a href="https://www.facebook.com/" class="me-4 link-secondary">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.twitter.com/" class="me-4 link-secondary">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="https://www.google.com/" class="me-4 link-secondary">
+                            <i class="bi bi-google"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="me-4 link-secondary">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" class="me-4 link-secondary">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.github.com/" class="me-4 link-secondary">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Categories
+                        </h6>
+                        <p>
+                            <a href="/pages/kidsSection.html" class="text-reset">Kids</a>
+                        </p>
+                        <p>
+                            <a href="/pages/mensSection.html" class="text-reset">Men </a>
+                        </p>
+                        <p>
+                            <a href="/pages/womensSection.html" class="text-reset">Women</a>
+                        </p>
+                        <p>
+                            <!-- <a href="/pages/moreCategories.html" class="text-reset">More</a> -->
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/pages/about.html" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="/pages/contact.html" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="bi bi-house me-3 text-secondary"></i>Indore, C4 10012, India</p>
+                        <p>
+                            <i class="bi bi-envelope  me-3 text-secondary"></i>
+                            ecarthelp@gmail.com
+                        </p>
+                        <p> <i class="bi bi-telephone me-3 text-secondary"></i> + 01 234 567 88</p>
+                        <p> <i class="bi bi-printer me-3 text-secondary"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <!-- <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">E-Cart</a>
+        </div> -->
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="/js/wishList.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.navbar-brand {
+    font-family: 'Comforter';
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.searchBar {
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 31px;
+}
+
+.textStyle {
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 43px;
+    margin: 0;
+}
+
+#sync1 .item {
+
+    padding: 0px 0px;
+    margin: 0;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#sync2 .item {
+    background: #C9C9C9;
+    padding: 0px 0px;
+    margin: 0;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sync2 .item h1 {
+    font-size: 18px;
+}
+
+/* #sync2 .current .item {
+    
+} */
+.partnerBrands .owl-carousel .owl-item img {
+
+    width: auto;
+    margin: auto;
+
+}
+
+.partnerBrands .owl-theme .owl-dots,
+.owl-theme .owl-nav {
+    padding: 23px;
+}
+
+.owl-theme .owl-nav {
+    display: none;
+    /*default owl-theme theme reset .disabled:hover links */
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    transition: all .3s ease;
+    /* display: none; */
+}
+
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #D6D6D6;
+    display: none;
+}
+
+#sync1.owl-theme {
+    position: relative;
+}
+
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+}
+
+#sync1.owl-theme .owl-prev {
+    left: 10px;
+}
+
+#sync1.owl-theme .owl-next {
+    right: 10px;
+}
+
+.ifrm {
+    border: none;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.international_brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.brand_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fashionHead {
+    background: #bcbcbc52;
+}
+
+
+/* -----------------------------------------------------------media query----------------------------------------------------------------- */
+
+@media screen and (max-width:426px) {
+    .navbar {
+        font-size: 17px;
+    }
+
+    .brandCategory {
+        width: 10rem !important;
+        padding-bottom: 12px;
+    }
+
+    .brand_cards {
+        margin: auto;
+        padding-bottom: 12px;
+        width: 10rem !important;
+    }
+
+    .textStyle {
+        font-family: 'Inter';
+        font-size: 17px;
+        font-weight: 600;
+        text-align: center;
+        padding: 28px;
+        margin: 0;
+    }
+
+}
+
+
+/* -----------------------add cart badge css ------------------------------ */
+
+.badge {
+     
+    --bs-badge-font-size: 0.5em;
+}
